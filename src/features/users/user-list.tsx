@@ -11,7 +11,7 @@ export const UserList = () => {
 
     useEffect(() => {
         dispatch(getAllUsers())
-    }, [])
+    }, [list])
 
     return (
         <>

@@ -25,7 +25,7 @@ export const userSlice = createAppSlice({
 
         deleteUser: create.asyncThunk(
             async (id: number) => {
-                const response = await axios.delete("http://localhost:3004/users/" + id);
+                const response = await axios.delete("http://localhost:3004/users/" + id);                
                 return response.data
             },
             {

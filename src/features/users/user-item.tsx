@@ -8,12 +8,13 @@ export const UserItem: React.FC<IProps> = ({id, name}) => {
 
     const dispatch = useAppDispatch()
 
-    const handelDelete = () => {
-        dispatch(deleteUser(id))
-    }
+    // const handelDelete = () => {
+    //     dispatch(deleteUser(id))
+    //     // dispatch(getAllUsers())
+    // }
 
     return <div>
         <h3>{name}</h3>
-        <button onClick={() => handelDelete()}>Delete</button>
+        <button onClick={() => dispatch(deleteUser(id))}>Delete</button>
     </div>
 }
